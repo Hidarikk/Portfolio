@@ -29,6 +29,7 @@ a {
     background: linear-gradient(90deg, rgba(67,22,88,45%) 0%, rgba(152,30,107,25%) 35%, rgba(193,44,66,25%) 100%); 
     display: flex;
     justify-content: space-between;
+    z-index: 1;
 }
 
 .headerName {
@@ -52,7 +53,7 @@ a {
 .welcoming {
     color:white;
     margin-left: 10rem;
-    padding-bottom: 25rem;
+    margin-bottom: 10rem;
 }
 
 .welcomeTitle {
@@ -62,17 +63,28 @@ a {
 
 .welcomeText {
     font-size: 1.3rem;
+    padding-bottom: 2rem;
 }
 
-.welcomBtn {
-    font-size: 1.5rem;
-    
+.welcomeBtn {
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+    border: 1px solid
+}
+
+.welcomeBtn:hover {
+    background-color: white;
+    color: black;
+
 }
 
 .proposDiv {
     display: flex;
     flex-direction: column;
     margin-bottom: 12rem;
+    margin-top: 5rem
 }
 
 .infoTitle {
@@ -80,6 +92,7 @@ a {
     color: white;
     text-decoration: underline;
     margin-bottom: 7rem;
+    padding-top: 10rem;
 }
 
 .infoFlex {
@@ -99,11 +112,12 @@ a {
     height: 300px;
     width: 500px;
     display: flex;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
     position: relative;
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
     margin-top: 4rem;
 }
 
@@ -111,10 +125,11 @@ a {
     clip-path: ellipse(40% 50%);
     height: 250px;
     position: absolute;
-    bottom: calc(100% - 100px);
+    bottom: calc(100% - 75px);
 }
 
 .infoText {
+    font-size: 1.2rem;
     color: white;
     text-align: center;
     padding-top: 3rem;
@@ -133,4 +148,43 @@ a {
 
 .skill {
     height: 200px;
+}
+
+.cvImg {
+    height: 200px;
+}
+
+.cvLink {
+    padding: 1rem;
+    border: 1px solid;
+
+}
+
+.projetTitle {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 5rem;
+}
+
+.projetCardContainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.projetCard {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    border: 1px solid grey
+}
+
+.cardImg {
+    height: 200px;
+}
+
+.cardTitle {
+    color:white;
+    text-align: center;
 }
