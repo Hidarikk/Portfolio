@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&display=swap');
+
+body {
+    margin: 0;
+    background-image: url(../background.gif);
+    background-size: 100%;
+    font-family: 'Kanit', sans-serif;
+}
+
+p {
+    font-family: 'Anuphan', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.start {
+    height: 1px;
+}
+
+.headerMain {
+    position: fixed;
+    width: 100%;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background: linear-gradient(90deg, rgba(67,22,88,45%) 0%, rgba(152,30,107,25%) 35%, rgba(193,44,66,25%) 100%); 
+    display: flex;
+    justify-content: space-between;
+}
+
+.headerName {
+    font-size: 2rem;
+    color: white;
+}
+
+.headerRight {
+    width: 35%
+}
+
+.headerList {
+    color: white;
+    padding-top: 1rem;
+    padding-right: 2rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+}
+
+.welcoming {
+    color:white;
+    margin-left: 10rem;
+    padding-bottom: 25rem;
+}
+
+.welcomeTitle {
+    font-size : 6rem;
+    padding-top: 15rem;
+}
+
+.welcomeText {
+    font-size: 1.3rem;
+}
+
+.welcomBtn {
+    font-size: 1.5rem;
+    
+}
+
+.proposDiv {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 12rem;
+}
+
+.infoTitle {
+    text-align: center;
+    color: white;
+    text-decoration: underline;
+    margin-bottom: 7rem;
+}
+
+.infoFlex {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.infoBg {
+    display: flex;
+    justify-content: center;
+    margin-top: 5rem;
+}
+
+.infoDiv {
+    background: linear-gradient(90deg, rgb(67, 22, 88) 0%, rgba(152, 30, 107, 0.729) 35%, rgba(193, 44, 66, 0.499) 100%);
+    border-radius: 2rem;
+    height: 300px;
+    width: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    margin-top: 4rem;
+}
+
+.infoPfp {
+    clip-path: ellipse(40% 50%);
+    height: 250px;
+    position: absolute;
+    bottom: calc(100% - 100px);
+}
+
+.infoText {
+    color: white;
+    text-align: center;
+    padding-top: 3rem;
+}
+
+.skillTitle {
+    text-align: center;
+    color: white;  
+    text-decoration: underline;
+}
+
+.skillAll {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.skill {
+    height: 200px;
+}
