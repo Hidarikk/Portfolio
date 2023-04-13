@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -8,39 +8,49 @@
     <title>Portfolio</title>
   </head>
   <body>
-
-    <div class="headerMain">
-      <h1 class="headerName"><a href="#start">DIMITRI ROBIN</a></h1>
+    <div class="headerMain" id="header">
+      <p class="headerName"><a href="#start">DIMITRI ROBIN</a></p>
       <div class="headerRight">
         <ul class="headerList">
-          <li><a href="#info">À propos de moi</a></li>
+          <li><a href="#info">À propos</a></li>
           <li><a href="./assets/CV Dimitri Robin.pdf">Mon CV</a></li>
           <li><a href="#projet">Mes projets</a></li>
-          <li><a href="">Contact</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><ion-icon class="iconLight" name="sunny"></ion-icon></li>
         </ul>
+        <ion-icon class="headerMenu" name="menu"></ion-icon>
       </div>
     </div>
 
     <div class="start" id="start"></div>
 
     <div class="welcoming">
-      <h1 class="welcomeTitle">Bienvenue sur mon portfolio</h1>
+      <h2 class="welcomeTitle">Bienvenue sur mon portfolio</h2>
       <p class="welcomeText">
-        En tant que développeur front-end, vous trouverez toutes les informations à savoir sur
-        moi ainsi que des moyens de me contacter.
+        En tant que développeur front-end, vous trouverez toutes les
+        informations à savoir sur moi ainsi que des moyens de me contacter.
       </p>
       <a class="welcomeBtn" href="#info">Voir mes infos</a>
     </div>
 
     <div class="proposDiv">
-      <h1 class="infoTitle" id="info">À propos de moi</h1>
+
       <div class="infoFlex">
         <div class="infoMain">
+          <h1 class="infoTitle" id="info">À propos</h1>
           <div class="infoBg">
             <div class="infoDiv">
               <img class="infoPfp" src="./assets/headHead.jpg" alt="" />
-              <p class="infoText">Je suis Dimitri Robin, jeune développeur front-end de 20 ans. Passionné d'informatique depuis mon plus jeune âge, j'ai décidé d'étudier pendant 2 ans l'informatique (DEUST IOSI), et j'ai terminé en 2023 la formation "Chargé de projet digital" chez Webforce3.</p>
-              <a class="welcomeBtn" href="./assets/CV Dimitri Robin.pdf">Mon CV</a>
+              <p class="infoText">
+                Je suis Dimitri Robin, jeune développeur front-end de 20 ans.
+                Passionné d'informatique depuis mon plus jeune âge, j'ai décidé
+                d'étudier pendant 2 ans l'informatique (DEUST IOSI), et j'ai
+                terminé en 2023 la formation "Chargé de projet digital" chez
+                Webforce3.
+              </p>
+              <a class="welcomeBtn" href="./assets/CV Dimitri Robin.pdf"
+                >Mon CV</a
+              >
             </div>
           </div>
         </div>
@@ -48,9 +58,18 @@
         <div class="divSkill">
           <h1 class="skillTitle">Mes compétences</h1>
           <div class="skillAll">
-            <img class="skill" src="./assets/html5_logo.png" alt="HTML5" />
-            <img class="skill" src="./assets/css3_logo.png" alt="CSS3" />
-            <img class="skill" src="./assets/js_logo.png" alt="JS" />
+            <div class="skill">
+              <ion-icon class="skillIcon" name="logo-html5"></ion-icon>
+              <h2 class="skillText">HTML5</h2>
+            </div>
+            <div class="skill">
+              <ion-icon class="skillIcon" name="logo-css3"></ion-icon>
+              <h2 class="skillText">CSS3</h2>
+            </div>
+            <div class="skill">
+              <ion-icon class="skillIcon" name="logo-javascript"></ion-icon>
+              <h2 class="skillText">JavaScript</h2>
+            </div>
           </div>
         </div>
       </div>
@@ -60,19 +79,56 @@
       <h1 class="projetTitle" id="projet">Mes projets</h1>
       <div class="projetCardContainer">
         <div class="projetCard">
-          <img class="cardImg" src="./assets/calculatrice_img.png" alt="Calculatrice">
+          <img
+            class="cardImg"
+            src="./assets/calculatrice_img.png"
+            alt="Calculatrice"
+          />
           <h2 class="cardTitle">Calculatrice</h2>
         </div>
         <div class="projetCard">
-          <img class="cardImg" src="./assets/maintenance_moche.jpg" alt="">
+          <img class="cardImg" src="./assets/maintenance_moche.jpg" alt="" />
           <h2 class="cardTitle">Alpha-betise</h2>
         </div>
         <div class="projetCard">
-          <img class="cardImg" src="./assets/portfolio_img.png" alt="Portfolio">
+          <img
+            class="cardImg"
+            src="./assets/portfolio_img.png"
+            alt="Portfolio"
+          />
           <h2 class="cardTitle">Portfolio</h2>
         </div>
       </div>
     </div>
 
+    <div class="contactDiv">
+      <h1 class="contactTitle" id="contact">Contact</h1>
+      <div class="contactInfo">
+        <a href="https://www.linkedin.com/in/dimitri-robin/"
+          ><ion-icon class="contactIcon" name="logo-linkedin"></ion-icon
+        ></a>
+        <a href="https://github.com/Hidarikk"
+          ><ion-icon class="contactIcon" name="logo-github"></ion-icon
+        ></a>
+        <a href="mailto:robin.dimitri59@gmail.com"
+          ><ion-icon class="contactIcon" name="mail"></ion-icon
+        ></a>
+      </div>
+    </div>
+
+    <div class="footerDiv">
+      <p class="footerText">Dimitri Robin © 2023</p>
+    </div>
+
+
+    <script src="./assets/js/script.js"></script>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
   </body>
 </html>
